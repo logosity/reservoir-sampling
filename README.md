@@ -10,8 +10,11 @@ that is essentially an example for a conversation, I feel this is a good use of 
 ## What it does
 
 - `reservoir.pl` - Implements reservoir sampling in Perl
+- `reservoir.py` - Implements reservoir sampling in Python
 - `analyze.py` - Plots the distribution and applies a chi-square test
 - `test.txt` - Test input (lines 1-100)
+
+Both implementations take a filename and iteration count as parameters.
 
 ## Setup
 
@@ -29,11 +32,11 @@ venv/bin/pip install pyqt5
 ## Run
 
 ```bash
-# Generate 10,000 samples
-just sample
+# Run Python version (generate samples + analyze)
+just py
 
-# Analyze distribution
-just run
+# Run Perl version (generate samples + analyze)
+just pl
 ```
 
 The script outputs statistics and saves `distribution.png` showing the results.
